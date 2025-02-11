@@ -1,9 +1,3 @@
-case "$OSTYPE" in
-    msys*)    python=python ;;
-    cygwin*)  python=python ;;
-    *)        python=python3 ;;
-esac
-
 cd ../yatube_api/
 $python manage.py migrate
 $python manage.py flush --no-input
